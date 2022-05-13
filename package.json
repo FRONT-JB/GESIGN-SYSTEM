@@ -5,8 +5,6 @@
   "scripts": {
     "common:ui": "yarn workspace @common/ui",
     "apps:next": "yarn workspace @apps/next",
-    "apps:next-install": "yarn workspace @apps/next install",
-    "apps:next-build": "yarn workspace @apps/next build",
     "postinstall": "husky install"
   },
   "workspaces": [
