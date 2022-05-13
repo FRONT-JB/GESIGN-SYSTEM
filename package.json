@@ -1,4 +1,19 @@
 {
-  "name": "GESIGN-SYSTEM",
-  "packageManager": "yarn@3.2.0"
+  "name": "gesign-system",
+  "packageManager": "yarn@3.2.0",
+  "private": true,
+  "scripts": {
+    "common:ui": "yarn workspace @common/ui",
+    "apps:next": "yarn workspace @apps/next",
+    "dev:all": "yarn workspaces foreach -p run dev"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.4"
+  }
 }
