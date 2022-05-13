@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "common:ui": "yarn workspace @common/ui",
-    "apps:next": "yarn workspace @apps/next"
+    "apps:next": "yarn workspace @apps/next",
+    "postinstall": "husky install"
   },
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
   "devDependencies": {
+    "@types/eslint": "^8",
     "@types/node": "^17.0.33",
     "@types/react": "^18.0.9",
     "@typescript-eslint/eslint-plugin": "^5.23.0",
@@ -25,6 +27,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "typescript": "^4.6.4"
   }

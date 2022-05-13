@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   extends: ['airbnb', 'prettier'],
-  plugins: ['prettier', 'react-hooks'],
+  plugins: ['prettier', 'react-hooks', '@typescript-eslint/eslint-plugin'],
   rules: {
     'prettier/prettier': 'error',
     'import/no-extraneous-dependencies': [
@@ -33,10 +33,35 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
+        pathGroups: [
+          {
+            pattern: 'react',
+            group: 'external',
+            position: 'before',
+          },
+          {
+            pattern: '[@]common/**',
+            group: 'external',
+            position: 'after',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['react'],
+        'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          caseInsensitive: true,
+        },
+      },
+    ],
     'jsx-a11y/label-has-associated-control': [
       'error',
       { controlComponents: ['input', 'select'] },
     ],
+    'import/prefer-default-export': 'off',
   },
   overrides: [
     {
@@ -60,7 +85,11 @@ module.exports = {
         '@typescript-eslint/no-floating-promises': 'off',
       },
       parserOptions: {
-        project: ['./tsconfig.json', './packages/**/tsconfig.json'],
+        project: [
+          './tsconfig.json',
+          './packages/**/tsconfig.json',
+          './apps/**/tsconfig.json',
+        ],
       },
     },
     {
@@ -84,4 +113,25 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts', '.js', '.jsx'],
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+    react: {
+      version: 'detect',
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+  },
 };
