@@ -3,11 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "main": "src/index.ts",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
     "@babel/runtime": "^7.17.8",
     "@common/components": "workspace:^",
