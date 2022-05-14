@@ -88,6 +88,7 @@ module.exports = {
         project: [
           './tsconfig.json',
           './packages/**/tsconfig.json',
+          './packages/**/vite.config.ts',
           './apps/**/tsconfig.json',
         ],
       },
