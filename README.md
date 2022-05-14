@@ -207,8 +207,6 @@ export { theme, globalStyles };
 yarn apps:next add @emotion/core @emotion/react @emotion/styled @common/styles
 ```
 
-<br />
-
 ```bash
 yarn apps:next add -D @emotion/babel-plugin
 ```
