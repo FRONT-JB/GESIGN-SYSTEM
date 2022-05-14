@@ -7,6 +7,7 @@ const Home: NextPage = () => (
   <Wrapper>
     <Button color="peru" />
     <Button color="green" />
+    <Button color="orange" />
   </Wrapper>
 );
 
