@@ -7,6 +7,9 @@ module.exports = {
   'packages/components/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p packages/components/tsconfig.json --noEmit',
   ],
+  'packages/storybook/**/*.+(ts|tsx)': [
+    () => 'yarn tsc -p packages/storybook/tsconfig.json --noEmit',
+  ],
   'packages/styles/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p packages/styles/tsconfig.json --noEmit',
   ],
