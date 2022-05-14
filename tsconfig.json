@@ -19,6 +19,9 @@
     },
     {
       "path": "packages/styles"
+    },
+    {
+      "path": "packages/storybook"
     }
   ],
   "exclude": ["packages/**/dist/**"],
