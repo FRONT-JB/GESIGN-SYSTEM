@@ -122,6 +122,21 @@ module.exports = {
       },
     },
     {
+      files: [
+        'packages/storybook/**/*.ts?(x)',
+        'packages/storybook/**/*.js?(x)',
+      ],
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(
+              `${__dirname}/packages/storybook/tsconfig.json`
+            ),
+          },
+        },
+      },
+    },
+    {
       files: ['apps/nextjs/**/*.ts?(x)', 'apps/nextjs/**/*.js?(x)'],
       settings: {
         'import/resolver': {

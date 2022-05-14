@@ -3,10 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "main": "src/index.ts",
-  "scripts": {
-    "build": "tsc && vite build"
-  },
   "dependencies": {
+    "@babel/runtime": "^7.17.8",
     "@emotion/react": "^11.9.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
