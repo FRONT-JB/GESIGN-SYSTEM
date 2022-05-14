@@ -7,5 +7,8 @@ module.exports = {
   'packages/components/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p packages/components/tsconfig.json --noEmit',
   ],
+  'packages/styles/**/*.+(ts|tsx)': [
+    () => 'yarn tsc -p packages/styles/tsconfig.json --noEmit',
+  ],
   '**/*.+(ts|tsx|js|jsx)': ['eslint --fix --cache', 'prettier --write'],
 };
