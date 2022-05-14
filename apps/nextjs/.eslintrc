@@ -1,0 +1,7 @@
+{
+  "settings": {
+    "next": {
+      "rootDir": "apps/nextjs/"
+    }
+  }
+}
