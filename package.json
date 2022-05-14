@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.2.0",
   "private": true,
   "scripts": {
-    "common:ui": "yarn workspace @common/ui",
+    "common:components": "yarn workspace @common/components",
     "apps:next": "yarn workspace @apps/next",
     "postinstall": "husky install"
   },
@@ -30,6 +30,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
+    "react": "^18.1.0",
     "typescript": "^4.6.4"
   }
 }

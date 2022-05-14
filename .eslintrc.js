@@ -3,6 +3,10 @@ const path = require('path');
 module.exports = {
   extends: ['airbnb', 'prettier'],
   plugins: ['prettier', 'react-hooks', '@typescript-eslint/eslint-plugin'],
+  env: {
+    browser: true,
+    node: true,
+  },
   rules: {
     'prettier/prettier': 'error',
     'import/no-extraneous-dependencies': [
@@ -88,17 +92,21 @@ module.exports = {
         project: [
           './tsconfig.json',
           './packages/**/tsconfig.json',
-          './packages/**/vite.config.ts',
           './apps/**/tsconfig.json',
         ],
       },
     },
     {
-      files: ['packages/ui/**/*.ts?(x)', 'packages/ui/**/*.js?(x)'],
+      files: [
+        'packages/components/**/*.ts?(x)',
+        'packages/components/**/*.js?(x)',
+      ],
       settings: {
         'import/resolver': {
           typescript: {
-            project: path.resolve(`${__dirname}/packages/ui/tsconfig.json`),
+            project: path.resolve(
+              `${__dirname}/packages/components/tsconfig.json`
+            ),
           },
         },
       },
@@ -131,8 +139,5 @@ module.exports = {
       version: 'detect',
     },
   },
-  env: {
-    browser: true,
-    node: true,
-  },
+  ignorePatterns: ['vite.config.*'],
 };

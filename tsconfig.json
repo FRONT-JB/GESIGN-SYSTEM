@@ -18,7 +18,7 @@
       "path": "apps/nextjs"
     },
     {
-      "path": "packages/ui"
+      "path": "packages/components"
     }
   ],
   "exclude": ["packages/**/dist/**"],

@@ -4,8 +4,8 @@ module.exports = {
   'apps/nextjs/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p apps/nextjs/tsconfig.json --noEmit',
   ],
-  'packages/ui/**/*.+(ts|tsx)': [
-    () => 'yarn tsc -p packages/ui/tsconfig.json --noEmit',
+  'packages/components/**/*.+(ts|tsx)': [
+    () => 'yarn tsc -p packages/components/tsconfig.json --noEmit',
   ],
   '**/*.+(ts|tsx|js|jsx)': ['eslint --fix --cache', 'prettier --write'],
 };

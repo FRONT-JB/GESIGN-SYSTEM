@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import { Button } from '@common/ui';
+import { Button } from '@common/components';
 
 import styles from '../styles/Home.module.css';
 
