@@ -214,6 +214,7 @@ yarn apps:next add -D @emotion/babel-plugin
 <br />
 
 ```json
+// apps/nextjs/.babelrc
 {
   "presets": [
     [
