@@ -5,6 +5,9 @@ const nextConfig = {
     externalDir: true,
   },
   disableExperimentalFeaturesWarning: true,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
