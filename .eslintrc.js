@@ -112,6 +112,16 @@ module.exports = {
       },
     },
     {
+      files: ['packages/styles/**/*.ts?(x)', 'packages/styles/**/*.js?(x)'],
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(`${__dirname}/packages/styles/tsconfig.json`),
+          },
+        },
+      },
+    },
+    {
       files: ['apps/nextjs/**/*.ts?(x)', 'apps/nextjs/**/*.js?(x)'],
       settings: {
         'import/resolver': {

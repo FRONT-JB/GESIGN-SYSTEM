@@ -1,14 +1,21 @@
+import styled from '@emotion/styled';
 import type { NextPage } from 'next';
 
 import { Button } from '@common/components';
 
-import styles from '../styles/Home.module.css';
-
 const Home: NextPage = () => (
-  <div className={styles.container}>
+  <Wrapper>
     <Button color="peru" />
     <Button color="green" />
-  </div>
+  </Wrapper>
 );
+
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
 
 export default Home;

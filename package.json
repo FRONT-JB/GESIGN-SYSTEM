@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "common:components": "yarn workspace @common/components",
+    "common:styles": "yarn workspace @common/styles",
     "apps:next": "yarn workspace @apps/next",
     "postinstall": "husky install"
   },

@@ -16,6 +16,9 @@
   "references": [
     {
       "path": "packages/components"
+    },
+    {
+      "path": "packages/styles"
     }
   ],
   "exclude": ["packages/**/dist/**"],
