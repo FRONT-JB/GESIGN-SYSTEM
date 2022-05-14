@@ -89,8 +89,6 @@ module.exports = {
 yarn common:styles add @emotion@react @emotion/styled @common/components
 ```
 
-<br/>
-
 ```bash
 yarn common:styles add -D typescript-styled-plugin
 ```
