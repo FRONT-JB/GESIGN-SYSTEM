@@ -1652,6 +1652,7 @@ __metadata:
     "@common/components": "workspace:*"
     "@common/styles": "workspace:*"
     "@emotion/react": ^11.7.1
+    "@emotion/styled": ^11.8.1
     "@storybook/addon-actions": ^6.4.12
     "@storybook/addon-docs": ^6.4.12
     "@storybook/addon-essentials": ^6.4.12
@@ -1659,6 +1660,7 @@ __metadata:
     "@storybook/builder-webpack5": ^6.4.12
     "@storybook/manager-webpack5": ^6.4.12
     "@storybook/react": ^6.4.12
+    "@storybook/theming": ^6.4.22
     "@types/react": ^17.0.38
     "@types/react-dom": ^17.0.11
     "@types/react-transition-group": ^4.4.4
@@ -1666,6 +1668,7 @@ __metadata:
     babel-loader: ^8.2.3
     clsx: ^1.1.1
     cuid: ^2.1.8
+    emotion-theming: ^11.0.0
     prop-types: ^15.8.1
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -3646,7 +3649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/theming@npm:6.4.22":
+"@storybook/theming@npm:6.4.22, @storybook/theming@npm:^6.4.22":
   version: 6.4.22
   resolution: "@storybook/theming@npm:6.4.22"
   dependencies:
@@ -7130,6 +7133,13 @@ __metadata:
     "@emotion/core": ^10.0.27
     react: ">=16.3.0"
   checksum: 2b0366afadbf60ab8d3d15750f0ac2949a74d580faa42713dad5c4fbe1652abee39e94ed9b228c47869111bf57d960d547da7a5844cd1ab86c9cdbfe62da9e99
+  languageName: node
+  linkType: hard
+
+"emotion-theming@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "emotion-theming@npm:11.0.0"
+  checksum: d823a50c4d3df3d9a4c21574c354cdbddbe06ad1d07b7fc2807cdc2eaf5d765ea1486d9d3292ea1855d9fb18b29edd39a7e3a784da4afa54ef5f1c02970142ed
   languageName: node
   linkType: hard
 
