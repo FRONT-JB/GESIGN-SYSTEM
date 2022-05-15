@@ -1,11 +1,12 @@
-import { ThemeProvider } from '@emotion/react';
 import { DecoratorFn } from '@storybook/react';
+import { ThemeProvider } from '@storybook/theming';
 
-import { theme } from '@common/styles';
+import { globalStyles, theme } from '@common/styles';
 
 export const decorators: DecoratorFn[] = [
   Story => (
     <ThemeProvider theme={theme}>
+      {globalStyles}
       <Story />
     </ThemeProvider>
   ),
