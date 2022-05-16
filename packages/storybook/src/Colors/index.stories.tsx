@@ -1,6 +1,23 @@
 import { css } from '@emotion/react';
 import { Story, Meta } from '@storybook/react';
 
+import {
+  BLACK_COLOR,
+  BLUE_COLOR,
+  BRONZE_COLOR,
+  GRAY_BLUE_COLOR,
+  GREEN_COLOR,
+  ORANGE_COLOR,
+  PINK_COLOR,
+  PURPLE_COLOR,
+  RED_COLOR,
+  TEAL_BLUE_COLOR,
+  TIFFANY_COLOR,
+  WHITE_COLOR,
+  YELLOW_COLOR,
+} from './colorList';
+import { ColorWrapper } from './styles';
+
 import Color from '.';
 
 export default {
@@ -27,17 +44,72 @@ Basic.args = {
   text: 'Color Value',
 };
 
-export const Colors = () => (
-  <>
-    <Color color="black_90" />
-    <Color color="black_80" />
-    <Color color="black_70" />
-    <Color color="black_60" />
-    <Color color="black_50" />
-    <Color color="black_40" />
-    <Color color="black_30" />
-    <Color color="black_20" />
-    <Color color="black_10" />
-    <Color color="black_5" />
-  </>
+export const ColorList = () => (
+  <ColorWrapper>
+    <div>
+      {BLACK_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {WHITE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {BLUE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {ORANGE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {PURPLE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {RED_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {YELLOW_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {GREEN_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {TEAL_BLUE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {PINK_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {BRONZE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {TIFFANY_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+    <div>
+      {GRAY_BLUE_COLOR.map(color => (
+        <Color key={color} color={color} />
+      ))}
+    </div>
+  </ColorWrapper>
 );
