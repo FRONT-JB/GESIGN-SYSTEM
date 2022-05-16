@@ -799,10 +799,10 @@ const theme: ThemeTypes = {
     gray_blue_3_120b: '0px 60px 120px rgba(38, 51, 77, 0.03)',
   },
   radius: {
-    30: '30px',
-    20: '20px',
-    15: '15px',
-    5: '5px',
+    radius_30: '30px',
+    radius_20: '20px',
+    radius_15: '15px',
+    radius_5: '5px',
   },
 };
 
