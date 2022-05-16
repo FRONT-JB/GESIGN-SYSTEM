@@ -48,67 +48,67 @@ export const ColorList = () => (
   <ColorWrapper>
     <div>
       {BLACK_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {WHITE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {BLUE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {ORANGE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {PURPLE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {RED_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {YELLOW_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {GREEN_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {TEAL_BLUE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {PINK_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {BRONZE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {TIFFANY_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
     <div>
       {GRAY_BLUE_COLOR.map(color => (
-        <Color color={color} />
+        <Color key={color} color={color} />
       ))}
     </div>
   </ColorWrapper>

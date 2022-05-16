@@ -5,7 +5,7 @@ export const ColorWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-gap: 10px;
-    &:not(:first-child) {
+    &:not(:first-of-type) {
       margin-top: 10px;
     }
   }
