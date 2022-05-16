@@ -797,9 +797,9 @@ export interface ThemeTypes {
     gray_blue_3_120b: string;
   };
   radius: {
-    30: string;
-    20: string;
-    15: string;
-    5: string;
+    radius_30: string;
+    radius_20: string;
+    radius_15: string;
+    radius_5: string;
   };
 }
