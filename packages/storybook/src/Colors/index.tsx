@@ -11,7 +11,6 @@ interface ColorProps {
 const Color = ({ color }: ColorProps) => (
   <Wrapper>
     <ColorBox colorValue={color} />
-    <Label>{color}</Label>
   </Wrapper>
 );
 
@@ -29,8 +28,4 @@ const ColorBox = styled.div<{ colorValue: ColorTypes }>`
   height: 30px;
   border-radius: 5px;
   background: ${({ theme, colorValue }) => theme.colors[colorValue]};
-`;
-
-const Label = styled.span`
-  font-size: 14px;
 `;
