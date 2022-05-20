@@ -4,3 +4,17 @@
 - [x] **`Global EmotionStyles (ViteJS React-TS)`**
 - [x] **`Storybook (React-TS)`**
 - [x] **`SampleApps (Nextjs)`**
+
+---
+
+```bash
+yarn set version berry
+```
+
+```bash
+yarn init
+```
+
+```bash
+mkdir package
+```
