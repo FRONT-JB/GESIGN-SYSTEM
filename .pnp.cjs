@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/components"\
       },\
       {\
+        "name": "@common/contracks",\
+        "reference": "workspace:packages/contracks"\
+      },\
+      {\
         "name": "@common/storybook",\
         "reference": "workspace:packages/storybook"\
       },\
@@ -42,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@apps/next", ["workspace:apps/nextjs"]],\
       ["@common/components", ["workspace:packages/components"]],\
+      ["@common/contracks", ["workspace:packages/contracks"]],\
       ["@common/storybook", ["workspace:packages/storybook"]],\
       ["@common/styles", ["workspace:packages/styles"]],\
       ["gesign-system", ["workspace:."]]\
@@ -2897,6 +2902,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT"\
         }]\
       ]],\
+      ["@common/contracks", [\
+        ["workspace:packages/contracks", {\
+          "packageLocation": "./packages/contracks/",\
+          "packageDependencies": [\
+            ["@common/contracks", "workspace:packages/contracks"],\
+            ["@openzeppelin/contracts", "npm:4.6.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@common/storybook", [\
         ["workspace:packages/storybook", {\
           "packageLocation": "./packages/storybook/",\
@@ -3909,6 +3924,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:2.0.0"],\
             ["mkdirp", "npm:1.0.4"],\
             ["rimraf", "npm:3.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@openzeppelin/contracts", [\
+        ["npm:4.6.0", {\
+          "packageLocation": "./.yarn/cache/@openzeppelin-contracts-npm-4.6.0-1ab1fa16fc-1de06211b2.zip/node_modules/@openzeppelin/contracts/",\
+          "packageDependencies": [\
+            ["@openzeppelin/contracts", "npm:4.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\

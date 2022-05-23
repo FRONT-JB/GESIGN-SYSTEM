@@ -36,3 +36,7 @@ tsconfig.tsbuildinfo
 *.njsproj
 *.sln
 *.sw?
+
+# Solidity
+artifacts
+.deps
