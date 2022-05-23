@@ -2,6 +2,7 @@
 
 - [x] **`Global Components (ViteJS React-TS)`**
 - [x] **`Global EmotionStyles (ViteJS React-TS)`**
+- [x] **`Smart Contracks (Solidity)`**
 - [x] **`Storybook (React-TS)`**
 - [x] **`SampleApps (Nextjs)`**
 
