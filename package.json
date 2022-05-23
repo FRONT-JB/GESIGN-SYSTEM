@@ -6,6 +6,7 @@
     "common:components": "yarn workspace @common/components",
     "common:styles": "yarn workspace @common/styles",
     "common:storybook": "yarn workspace @common/storybook",
+    "common:contracks": "yarn workspace @common/contracks",
     "apps:next": "yarn workspace @apps/next",
     "postinstall": "husky install"
   },

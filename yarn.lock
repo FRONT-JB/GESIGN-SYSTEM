@@ -1638,6 +1638,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@common/contracks@workspace:packages/contracks":
+  version: 0.0.0-use.local
+  resolution: "@common/contracks@workspace:packages/contracks"
+  languageName: unknown
+  linkType: soft
+
 "@common/storybook@workspace:packages/storybook":
   version: 0.0.0-use.local
   resolution: "@common/storybook@workspace:packages/storybook"

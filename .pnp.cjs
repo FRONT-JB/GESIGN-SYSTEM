@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/components"\
       },\
       {\
+        "name": "@common/contracks",\
+        "reference": "workspace:packages/contracks"\
+      },\
+      {\
         "name": "@common/storybook",\
         "reference": "workspace:packages/storybook"\
       },\
@@ -42,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@apps/next", ["workspace:apps/nextjs"]],\
       ["@common/components", ["workspace:packages/components"]],\
+      ["@common/contracks", ["workspace:packages/contracks"]],\
       ["@common/storybook", ["workspace:packages/storybook"]],\
       ["@common/styles", ["workspace:packages/styles"]],\
       ["gesign-system", ["workspace:."]]\
@@ -2893,6 +2898,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:c030c8eea59fa93d03cd1aa2077eeaa8c8c1de0890801746fa260be21aea20999bde0cc97c56cc9a681a96125f5b38d9f083f0bcf277b4a30699f11e2538e656#npm:18.1.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=bda367"],\
             ["vite", "virtual:c030c8eea59fa93d03cd1aa2077eeaa8c8c1de0890801746fa260be21aea20999bde0cc97c56cc9a681a96125f5b38d9f083f0bcf277b4a30699f11e2538e656#npm:2.9.9"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@common/contracks", [\
+        ["workspace:packages/contracks", {\
+          "packageLocation": "./packages/contracks/",\
+          "packageDependencies": [\
+            ["@common/contracks", "workspace:packages/contracks"]\
           ],\
           "linkType": "SOFT"\
         }]\
