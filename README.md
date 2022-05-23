@@ -17,5 +17,5 @@ yarn init
 ```
 
 ```bash
-mkdir package
+mkdir packages
 ```
