@@ -1641,6 +1641,8 @@ __metadata:
 "@common/contracks@workspace:packages/contracks":
   version: 0.0.0-use.local
   resolution: "@common/contracks@workspace:packages/contracks"
+  dependencies:
+    "@openzeppelin/contracts": ^4.6.0
   languageName: unknown
   linkType: soft
 
@@ -2388,6 +2390,13 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 1388777b507b0c592d53f41b9d182e1a8de7763bc625fc07999b8edbc22325f074e5b3ec90af79c89d6987fdb2325bc66d59f483258543c14a43661621f841b0
+  languageName: node
+  linkType: hard
+
+"@openzeppelin/contracts@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "@openzeppelin/contracts@npm:4.6.0"
+  checksum: 1de06211b279d7aef2bb9abbdd58eb80c71256f7e888a10855ea23bb06ef8723b22fb550d06af60247dfbd7f0f23de9821732012d7541a823339070a8442d1db
   languageName: node
   linkType: hard
 
