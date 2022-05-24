@@ -8,6 +8,7 @@
     "common:storybook": "yarn workspace @common/storybook",
     "common:contracks": "yarn workspace @common/contracks",
     "apps:next": "yarn workspace @apps/next",
+    "apps:web3": "yarn workspace @apps/web3",
     "postinstall": "husky install"
   },
   "workspaces": [
