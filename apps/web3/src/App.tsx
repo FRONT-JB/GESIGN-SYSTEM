@@ -1,5 +1,15 @@
 import React, { FC } from 'react';
 
-const App: FC = () => <button type="button">web3-boilerplate</button>;
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Main from './routes/main';
+
+const App: FC = () => (
+  <Router>
+    <Routes>
+      <Route path="/" element={<Main />} />
+    </Routes>
+  </Router>
+);
 
 export default App;
