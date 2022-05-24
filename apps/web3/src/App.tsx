@@ -1,15 +1,39 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Main from './routes/main';
 
-const App: FC = () => (
-  <Router>
-    <Routes>
-      <Route path="/" element={<Main />} />
-    </Routes>
-  </Router>
-);
+const App: FC = () => {
+  const [account, setAccount] = useState('');
+  const getAccount = async () => {
+    try {
+      if (window.ethereum) {
+        const accounts = await window.ethereum.request({
+          method: 'eth_requestAccounts',
+        });
+        setAccount(accounts[0]);
+      } else {
+        alert('Install Metamask');
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getAccount();
+  }, []);
+
+  useEffect(() => {
+    console.log(account);
+  }, [account]);
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
