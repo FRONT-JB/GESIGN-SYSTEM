@@ -88,6 +88,7 @@ module.exports = {
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/no-floating-promises': 'off',
         '@typescript-eslint/no-unsafe-return': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
       },
       parserOptions: {
         project: [
@@ -143,6 +144,16 @@ module.exports = {
         'import/resolver': {
           typescript: {
             project: path.resolve(`${__dirname}/apps/nextjs/tsconfig.json`),
+          },
+        },
+      },
+    },
+    {
+      files: ['apps/web3/**/*.ts?(x)', 'apps/web3/**/*.js?(x)'],
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(`${__dirname}/apps/web3/tsconfig.json`),
           },
         },
       },

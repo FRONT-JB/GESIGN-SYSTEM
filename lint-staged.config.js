@@ -4,6 +4,9 @@ module.exports = {
   'apps/nextjs/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p apps/nextjs/tsconfig.json --noEmit',
   ],
+  'apps/web3/**/*.+(ts|tsx)': [
+    () => 'yarn tsc -p apps/web3/tsconfig.json --noEmit',
+  ],
   'packages/components/**/*.+(ts|tsx)': [
     () => 'yarn tsc -p packages/components/tsconfig.json --noEmit',
   ],
