@@ -18,5 +18,5 @@
     "jsx": "preserve",
     "types": ["node", "jest", "@testing-library/jest-dom"]
   },
-  "include": ["src", "src/contracks"]
+  "include": ["src"]
 }
