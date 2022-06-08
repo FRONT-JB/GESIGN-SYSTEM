@@ -20,9 +20,6 @@ const Main: FC = () => {
     getAccount();
   }, []);
 
-  useEffect(() => {
-    console.log(account);
-  }, [account]);
   return <div>{account || 'Not Connected'}</div>;
 };
 
